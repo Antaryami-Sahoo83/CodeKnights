@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}|| Profile{% endblock title %}
+
+
+
+{% block content %}
+  <div class="dashboard">
+    <div class="dashboard-item">
+      <h2>Number of complaints registered:{{ complaints|length }}</h2><br>
+      <!-- Add your content here -->
+    </div>
+
+    <div class="dashboard-item">
+      <h2>Number of successful complaints:{{success_complaints|length}}</h2><br>
+      <!-- Add your content here -->
+    </div>
+
+    <div class="dashboard-item">
+      <h2>Number of pending complaints:{{pending_complaints|length}}</h2><br>
+      <!-- Add your content here -->
+    </div>
+
+    <div class="dashboard-item">
+        <h2>Reward Point:{{bounty}}</h2><br>
+        <!-- Add your content here -->
+      </div>
+
+    <!-- Add more dashboard items as needed -->
+
+  </div>
+
+
+{% endblock content%}
